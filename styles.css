@@ -26,7 +26,7 @@ html, body {
         background-position-y: 0;
     }
     50% {
-        background-position-y: -2%; /* adjust height of float */
+        background-position-y: -20px; /* adjust height of float */
     }
 }
 
