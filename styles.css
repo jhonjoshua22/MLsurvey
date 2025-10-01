@@ -1,7 +1,6 @@
 .ml-bg {
     background-image: url(mobilelegends2.jpg);
     background-size: cover;
-    background-clip: content-box;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -60,6 +59,7 @@ html, body {
     position: absolute;
     bottom: 20%;
     left: 50%;
+    z-index: 1;
     transform: translateX(-50%);
     width: auto;   /* let button size itself */
     text-align: center;
