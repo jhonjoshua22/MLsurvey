@@ -1,6 +1,8 @@
 .ml-bg {
     background-image: url(mobilelegends2.jpg);
     background-size: cover;
+    background-clip: content-box;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
@@ -14,13 +16,18 @@ body {
   background: black;  /* fallback */
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 @keyframes floatUpDown {
     0%, 100% {
         background-position-y: 0;
     }
     50% {
-        background-position-y: -20px; /* adjust height of float */
+        background-position-y: -2%; /* adjust height of float */
     }
 }
 
@@ -50,13 +57,14 @@ body {
 }
 
 .startb {
-    height: auto;
-    bottom: 20%;
-    left: 25%;
-    width: 50%;
     position: absolute;
-    z-index: 1;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;   /* let button size itself */
+    text-align: center;
 }
+
 
 .startb button {
     background: linear-gradient(45deg, #8e2de2, #4a00e0, #00c6ff);
@@ -94,4 +102,3 @@ body {
 input, select {
     margin: 0 1px 10px;
 }
-
